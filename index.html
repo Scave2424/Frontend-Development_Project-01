@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Student Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="studentjava.js"></script>
+</head>
+
+<body>
+    <form onsubmit="register(event)">
+        <h1>Student Registration Form</h1>
+        <div>
+            <p class="details">Student Name</p>
+            <input class="search-box" type="text" id="name" placeholder="Enter Name" required>
+            <p class="details">Email</p>
+            <input class="search-box" type="email" id="email" placeholder="Enter email" required>
+            <p class="details">Password</p>
+            <input class="search-box" type="password" id="password" placeholder="Enter passsword" minlength=8 required>
+            <p class="details">Confirm Password</p>
+            <input class="search-box" type="password" id="confirmPassword" placeholder="Confirm passsword">
+            <p class="details">Age</p>
+            <input class="search-box" type="text" id="age" placeholder="Enter Age" required>
+            <p class="details">Department</p>
+            <select id="department" class="search-box" required>
+                <option value="" disabled selected>Select Department</option>
+                <option value="CSE">Computer Science</option>
+                <option value="ECE">Electronics & Communication</option>
+                <option value="EEE">Electrical & Electronics</option>
+                <option value="ME">Mechanical</option>
+                <option value="CE">Civil</option>
+            </select>
+            <p class="details">Gender<br />
+                <input type="radio" name="Gender" value="Male" required> Male
+                <input type="radio" name="Gender" value="Female"> Female<br></br>
+                <input type="checkbox"> I accept Terms and Condition*
+            </p>
+            <button type="submit" class="register" draggable="true"> Register</button>
+            <p id="output"></p>
+            <h3>Registered Students</h3>
+            <table id="studentTable">
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Department</th>
+                </tr>
+            </table>
+            <p class="details">Weather</p>
+            <input class="search-box" type="text" id="weather" placeholder="Get Auto weather value" required>
+        </div>
+
+    </form>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+<link rel="stylesheet" href="style.css">
+<script src="studentjava.js"></script>
+</head>
+
+<body>
+    <div >
+    <form>
+    <h1>Student Registration Form</h1>
+    <label>Student Name</label><br />
+    <input type="text" placeholder="Enter your name"><br />
+    <label>Email</label><br />
+    <input type="email" placeholder="Enter Email"><br />
+    <label>Password</label><br />
+    <input type="password" placeholder="Enter Password"><br />
+    <label>Confirm Password</label><br />
+    <input type="password" placeholder="Confirm Password"><br />
+    <button >Register</button>
+    </form>
+    </div>
+</body>
+</html> -->

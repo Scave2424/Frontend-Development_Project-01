@@ -1,0 +1,88 @@
+body {
+    font-family: arial;
+    background-color: hwb(226 31% 13%);
+}
+
+th {
+    background-color: blue;
+    color: white;
+    padding: 12px;
+    text-align: center;
+}
+
+td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid lightgray;
+}
+
+table {
+    width: 377px;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 410px;
+    height: auto;
+    align-items: center;
+    background-color: white;
+    margin-left: 500px;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 400px;
+    margin-left: 20px;
+    gap: 0px;
+}
+
+h1 {
+    color: blue;
+    text-align: center;
+}
+
+#output {
+    color: red;
+    text-align: center;
+}
+
+.search-box {
+    width: 377px;
+    height: 40px;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.search-box:active {
+    border: none;
+}
+
+.details {
+    margin-bottom: 2px;
+}
+
+.register {
+    width: 377px;
+    height: 35px;
+    margin-top: 20px;
+    color: white;
+    background-color: blue;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.9);
+}
