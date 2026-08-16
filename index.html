@@ -7,7 +7,7 @@
     <script src="studentjava.js"></script>
 </head>
 
-<body>
+<body class=" my-auto">
     <form onsubmit="register(event)">
         <h1>Student Registration Form</h1>
         <div>
@@ -20,7 +20,7 @@
             <p class="details">Confirm Password</p>
             <input class="search-box" type="password" id="confirmPassword" placeholder="Confirm passsword">
             <p class="details">Age</p>
-            <input class="search-box" type="text" id="age" placeholder="Enter Age" required>
+            <input class="search-box" type="number" min=16 step="1" id="age" placeholder="Enter Age" required>
             <p class="details">Department</p>
             <select id="department" class="search-box" required>
                 <option value="" disabled selected>Select Department</option>
@@ -33,7 +33,7 @@
             <p class="details">Gender<br />
                 <input type="radio" name="Gender" value="Male" required> Male
                 <input type="radio" name="Gender" value="Female"> Female<br></br>
-                <input type="checkbox"> I accept Terms and Condition*
+                <input type="checkbox" required> I accept Terms and Condition*
             </p>
             <button type="submit" class="register" draggable="true"> Register</button>
             <p id="output"></p>
@@ -45,7 +45,7 @@
                     <th>Department</th>
                 </tr>
             </table>
-            
+
         </div>
 
     </form>

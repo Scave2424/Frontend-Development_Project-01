@@ -1,4 +1,5 @@
 function register(event) {
+    event.preventDefault();
     let name = document.getElementById("name").value
     console.log(name)
     let email = document.getElementById("email").value
@@ -11,8 +12,12 @@ function register(event) {
     console.log(age)
     let department = document.getElementById("department").value
     console.log(department)
-    if (name === "" || email === "") {
-        document.getElementById("output").textContent = "Name and Email are required";
+    if (pass !== cpass) {
+        document.getElementById("output").textContent = "Passwords do not match!";
+        return;
+    }
+    if (age < 16) {
+        document.getElementById("output").textContent = "Age must be greater than 15!";
         return;
     }
     let table = document.getElementById("studentTable")
@@ -30,5 +35,5 @@ function register(event) {
     document.getElementById("department").selectedIndex = 0;
     document.getElementById("age").value = "";
 
-    event.preventDefault();
+
 }
